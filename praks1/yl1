@@ -3,6 +3,8 @@
 #Ylesanne kasutaja tervitamiseks
 
 kasutaja=`whoami`
-echo "Tere $kasutaja!"
+esitaht=`whoami | cut -c1 | tr [a-z] [A-Z]`
+loputahed=`whoami | cut -c2-4`
+echo "Tere $esitaht$loputahed!"
 
 
