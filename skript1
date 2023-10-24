@@ -3,7 +3,7 @@
 #Kommentaar siia kirjutame
 #see skript trykib välja kasutaja_ninmi ja asukoht
 #muutujale ipa omistame oma IPa-s
-ipa=`hostname -I`
+ipaadress=`hostname -I`
 
 echo -n "Sinu kasutaja nimi on: "
 whoami
@@ -11,6 +11,6 @@ sleep 1.5
 echo -n "Sinu praegune kataloog on: "
 pwd
 sleep 0.5
-echo -n "Sinu arvuti ip aadress on: $ipa"
+echo -n "Sinu arvuti ip aadress on: $ipaadress"
 sleep 1.5
 clear
